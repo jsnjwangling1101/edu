@@ -5,8 +5,38 @@ st.set_page_config(
     page_title="新加坡留学‘防破产’计算器",
     page_icon="🇸🇬",
     layout="centered",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="auto"  # Sidebar is visible by default
 )
+
+# --- Sidebar for Profile and Lead Generation ---
+with st.sidebar:
+    st.title("👨‍🏫 新加坡王老师")
+    st.markdown("🇸🇬 **本地实体团队 | 专注留学/身份规划**")
+    st.markdown("---")
+
+    st.subheader("个人简介")
+    st.markdown("""
+    - 深耕中新两地教育行业27年
+    - **擅长**：低分逆袭名校 / 中产阶级避坑 / 移民身份规划
+    """)
+    st.markdown("---")
+
+    st.subheader("联系方式")
+    st.markdown("💬**咨询/领资料请加微信：**")
+    
+    # Using st.text_input in a disabled state makes it easy for users to copy the WeChat ID.
+    st.text_input(
+        "WeChat ID (点击复制)", 
+        "wangling86945931", 
+        disabled=True, 
+        label_visibility="collapsed"
+    )
+    st.info("💡 备注【计算器】优先通过")
+    
+    st.markdown("---")
+    # Small font disclaimer at the bottom of the sidebar
+    st.caption("工具数据仅供参考，具体以官方政策为准。")
+
 
 # --- Main App ---
 
