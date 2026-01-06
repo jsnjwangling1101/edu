@@ -192,6 +192,17 @@ if submit_button:
         - **年度总成本**: `S$ {total_annual_cost_sgd:,.2f}`
         """)
 
+# --- NEW: Main Page Contact Card ---
+# This card ensures contact info is visible even if the sidebar is collapsed on mobile.
+st.markdown("---")
+st.success(
+    """
+    ### 👨‍🏫 没算明白？找王老师做个详细规划
+    - **微信ID:** `wangling86945931`
+    - **提示语:** 备注【计算器】优先通过
+    """
+)
+
 # --- Footer ---
 st.markdown("---")
 st.markdown("免责声明: 本计算器结果仅供参考，实际费用可能因个人消费习惯、通货膨胀及政策变动而有所不同。")
